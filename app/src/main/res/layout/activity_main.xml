@@ -59,18 +59,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/phrase"
-        android:text="Frase"
+        android:layout_marginTop="80dp"
+        android:layout_alignTop="@id/textName"
+        android:id="@+id/phraseText"
+        android:text="Você perde todas as chances que você não aproveita."
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:gravity="bottom|center"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
         android:textSize="28dp"/>
     
     <View
         android:id="@+id/phraseLine"
         android:layout_marginTop="36dp"
-        android:layout_below="@id/phrase"
+        android:layout_below="@id/phraseText"
         android:layout_width="140dp"
         android:layout_height="2dp"
         android:layout_centerHorizontal="true"

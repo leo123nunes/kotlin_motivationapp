@@ -14,6 +14,7 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var sharedPreferences: SecurityPreferences
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_splash)
