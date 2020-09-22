@@ -6,7 +6,7 @@
     android:background="@color/backgroundSplash"
     android:layout_height="match_parent"
     android:padding="28dp"
-    tools:context=".SplashActivity">
+    tools:context=".ui.SplashActivity">
 
     <TextView
         android:layout_marginTop="30dp"
