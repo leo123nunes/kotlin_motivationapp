@@ -17,15 +17,18 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_splash)
 
         sharedPreferences = SecurityPreferences(this)
+
+        setContentView(R.layout.activity_splash)
 
         if(supportActionBar !=null){
             supportActionBar!!.hide()
         }
 
         buttonSave.setOnClickListener(this)
+
+        verifyUserName()
     }
 
     override fun onClick(view: View) {
@@ -45,6 +48,17 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
             sharedPreferences.storeString(MotivationConstants.KEY.PERSON_NAME,name)
             startActivity(Intent(this,
                 MainActivity::class.java))
+
+            finish()
+        }
+    }
+
+    fun verifyUserName(){
+        var name = sharedPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
+        if(name!=""){
+            startActivity(Intent(this,
+                MainActivity::class.java))
+            finish()
         }
     }
 }

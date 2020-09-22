@@ -29,7 +29,8 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         }
 
         // Lógica inicial do aplicativo
-        textName.text = sharedPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
+        var t = sharedPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
+        textName.text = "Olá, ${t}!"
         imageAll.setColorFilter(resources.getColor(R.color.filterColor))
         handlePhrase(filter)
 
