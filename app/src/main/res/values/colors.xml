@@ -5,4 +5,5 @@
     <color name="colorAccent">#FFFFFF</color>
     <color name="backgroundSplash">#7E308C</color>
     <color name="ButtonSplash">#DD6DF1</color>
+    <color name="menuColor">#871D6F</color>
 </resources>

@@ -18,6 +18,10 @@ class MainActivity : AppCompatActivity() {
 
         sharedPreferences = SecurityPreferences(this)
 
+        if(supportActionBar!=null){
+            supportActionBar!!.hide()
+        }
+
         textName.text = sharedPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
     }
 }
