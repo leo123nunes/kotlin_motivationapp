@@ -89,6 +89,6 @@
         android:layout_centerHorizontal="true"
         android:padding="16dp"
         android:textColor="#ffff"
-        android:background="@color/menuColor"/>
+        android:background="@drawable/ripple_button"/>
 
 </RelativeLayout>
