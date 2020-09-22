@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import com.leo123nunes.motivationapp.R
+import com.leo123nunes.motivationapp.infra.MotivationConstants
 import com.leo123nunes.motivationapp.infra.SecurityPreferences
 import kotlinx.android.synthetic.main.activity_splash.*
 
@@ -37,9 +38,10 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
         var name = userName.text.toString()
 
         if(name==""){
-            Toast.makeText(this,"Por gentileza, digite seu nome.",Toast.LENGTH_LONG).show()
+            Toast.makeText(this
+                ,"Por gentileza, digite seu nome.",Toast.LENGTH_LONG).show()
         }else{
-            sharedPreferences.storeString("name",name)
+            sharedPreferences.storeString(MotivationConstants.KEY.PERSON_NAME,name)
             startActivity(Intent(this,
                 MainActivity::class.java))
         }
