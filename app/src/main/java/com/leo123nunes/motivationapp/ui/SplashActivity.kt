@@ -5,12 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
+import com.leo123nunes.motivationapp.Mock.PhrasesMock
 import com.leo123nunes.motivationapp.R
 import com.leo123nunes.motivationapp.infra.MotivationConstants
 import com.leo123nunes.motivationapp.infra.SecurityPreferences
 import kotlinx.android.synthetic.main.activity_splash.*
 
-class SplashActivity : AppCompatActivity(), View.OnClickListener {
+open class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var sharedPreferences: SecurityPreferences
 
@@ -20,6 +21,9 @@ class SplashActivity : AppCompatActivity(), View.OnClickListener {
 
         sharedPreferences = SecurityPreferences(this)
 
+        object{
+            var phrases = PhrasesMock(resources)
+        }
         setContentView(R.layout.activity_splash)
 
         if(supportActionBar !=null){

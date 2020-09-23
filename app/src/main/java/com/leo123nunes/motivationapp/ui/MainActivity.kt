@@ -8,15 +8,12 @@ import com.leo123nunes.motivationapp.R
 import com.leo123nunes.motivationapp.infra.MotivationConstants
 import com.leo123nunes.motivationapp.infra.SecurityPreferences
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.activity_splash.*
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var sharedPreferences: SecurityPreferences
 
     private var filter = MotivationConstants.PHRASEFILTER.ALL
-
-    private var phrases = PhrasesMock()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -28,9 +25,12 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             supportActionBar!!.hide()
         }
 
+        //phrases = PhrasesMock()
+        //phrases.loadResource(resources)
+
         // Lógica inicial do aplicativo
         var t = sharedPreferences.getString(MotivationConstants.KEY.PERSON_NAME)
-        textName.text = "Olá, ${t}!"
+        textName.text = "${resources.getString(R.string.ola)}, ${t}!"
         imageAll.setColorFilter(resources.getColor(R.color.filterColor))
         handlePhrase(filter)
 
@@ -68,6 +68,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     fun handlePhrase(filter: String){
-        phraseText.text = phrases.pickPhrase(filter).description
+        phraseText.text = PhrasesMock(resources).pickPhrase(filter).description
     }
 }

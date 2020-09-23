@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MotivationApp</string>
+    <string name="vamosComecar">Let\'s start?</string>
+    <string name="qualSeuNome">What\'s your name?</string>
+    <string name="salvar">Save</string>
+    <string name="ola">Hi</string>
+    <string name="novaFrase">New phrase</string>
+    <string name="phrase1">Not knowing it was impossible, he went there and did it.</string>
+    <string name="phrase2">You are not defeated when you lose, you are defeated when you give up!</string>
+    <string name="phrase3">When it\'s dark, we see more stars!</string>
+    <string name="phrase4">Insanity is always doing the same thing and expecting a different result.</string>
+    <string name="phrase5">Don\'t stop when you\'re tired, stop when you\'re done.</string>
+    <string name="phrase6">What can you do now that has the greatest impact on your success?</string>
+    <string name="phrase7">The best way to predict the future is to invent it.</string>
+    <string name="phrase8">You lose all chances that you don\'t take advantage of.</string>
+    <string name="phrase9">Failure is the condiment that gives flavor to success.</string>
+    <string name="phrase10">As long as we are not committed, there will be hesitation!</string>
+    <string name="phrase11">If you don\'t know where you want to go, any path will do.</string>
+    <string name="phrase12">If you believe, it makes all the difference.</string>
+    <string name="phrase13">Risks must be taken, because the greatest danger is not to risk anything!</string>
+</resources>
