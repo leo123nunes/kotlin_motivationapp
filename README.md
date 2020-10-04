@@ -5,11 +5,8 @@ de motivação aparecerão na tela de acordo com o ícone selecionado na parte s
 # Linguagem de programação
 Kotlin.
 
-# Ambiente de desenvolvimento
+# IDE
 Android Studio 4.0.1
-
-# Dispositivo virtual utilizado
-Pixel API
 
 # Versão do Android
 7.1.1
