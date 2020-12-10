@@ -1,11 +1,11 @@
 # AndroidStudio-Kotlin_MotivationApp
-Aplicativo para mostrar frases motivacionais para o usuário. Para executar o aplicativo, basta abri-lo, inserir seu nome e clicar no botão salvar. Em seguida mensagens de motivação aparecerão na tela de acordo com o ícone selecionado na parte superior do aplicativo.
+Application to show motivational phrases to the user. To run the application, just open it, enter your name and click the save button. Then motivation messages will appear on the screen according to the icon selected at the top of the application.
 
-# Linguagem de programação
+# Programming language
 Kotlin.
 
 # IDE
 Android Studio 4.0.1
 
-# Versão do Android
+# Android's version
 7.1.1
