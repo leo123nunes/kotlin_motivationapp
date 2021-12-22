@@ -1,7 +1,7 @@
 # Motivation app
 Application to show motivational phrases to the user. To run the application, just open it, enter your name and click the save button. Then motivation messages will appear on the screen according to the icon selected at the top of the application.
 
-## Language
+## Code language
 Kotlin.
 
 ## IDE
